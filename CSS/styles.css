@@ -53,6 +53,8 @@ ul {
 	padding-left: 15px;
 	outline: 4px solid red;
 }
+/* Позиціювання шапки */
+
 
 .logo {
 	color: #000000;
@@ -69,11 +71,21 @@ ul {
 	font-size: 26px;
 	line-height: 1.19;
 }
-
+.main-nav {
+	display: flex;
+}
 /* Сайт зараз */
+
+.site-nav {
+	display: flex;
+}
+.site-nav .item:not(:last-child) {
+	margin-right: 50px;
+}
 
 
 .site-nav .link {
+
 	color: #212121;
 	font-weight: 500;
 	font-size: 14px;
@@ -92,7 +104,16 @@ ul {
 }
 
 /* ПОшта з телефоном */
+.more {
+	display: flex;
+}
+
+.more .item:not(:last-child) {
+	margin-right: 50px;
+}
+
 .more .more-link {
+
 	color: #757575;
 	font-weight: 500;
 	font-size: 14px;
