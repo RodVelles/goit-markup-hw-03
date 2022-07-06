@@ -169,6 +169,9 @@ ul {
 }
 
 .section .section-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -196,25 +199,30 @@ ul {
 }
 
 /* Розгляд послуг */
-.container > .heading {
-	margin-top: 0;
-	margin-bottom: 50px;
+.section.sidebar {
+	padding-top: 0;
 }
+
 
 /* Члени команди */
 .section .section-name {
+    margin-top: 30px;
+	margin-bottom: 10px;
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
-	text-align: center;
 }
 
 .section .profession {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 30px;
+
 	color: #757575;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.19;
-	text-align: center;
 }
 
 /* Футер */
