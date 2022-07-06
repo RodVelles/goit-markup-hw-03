@@ -71,6 +71,8 @@ ul {
 }
 
 /* Сайт зараз */
+
+
 .site-nav .link {
 	color: #212121;
 	font-weight: 500;
@@ -231,6 +233,8 @@ ul {
 }
 
 .logo.slogan {
+	padding-bottom: 60px;
+
 	color: #ffffff;
 }
 
