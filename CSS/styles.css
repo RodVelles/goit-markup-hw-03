@@ -49,9 +49,10 @@ ul {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
 	outline: 4px solid red;
 }
-
 
 .logo {
 	color: #000000;
@@ -63,7 +64,7 @@ ul {
 }
 
 .caption {
-	color: #2196F3;
+	color: #2196f3;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
@@ -110,7 +111,6 @@ ul {
 	background-color: #2f303a;
 }
 
-
 .hero .hero-title {
 	padding: 0;
 	margin: 0;
@@ -122,14 +122,15 @@ ul {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-
 }
 
 .button {
 	border-radius: 4px;
-    padding: 10px 32px;
+	padding: 10px 32px;
 	min-width: 200px;
-	border: 1px solid transparent;
+	border: none;
+	margin-right: auto;
+	margin-left: auto;
 
 	font-family: Roboto;
 	color: #ffffff;
@@ -141,25 +142,30 @@ ul {
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-
-	margin-right: auto;
-	margin-left: auto;
-
 }
 
-
 /* Переваги помлуг */
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .section .hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.list-items {
+	margin: 0;
+	padding: 0;
 }
 
 .section .section-title {
@@ -167,12 +173,12 @@ ul {
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
-
-	margin-top: 0;
-	margin-bottom: 0;
 }
 
 .section .section-subtitle {
+	margin: 0;
+	margin-bottom: 10px;
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -180,10 +186,19 @@ ul {
 }
 
 .section .section-text {
+	margin-top: 0;
+	margin-bottom: 0;
+
 	color: var(--primary-text-color);
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
+}
+
+/* Розгляд послуг */
+.container > .heading {
+	margin-top: 0;
+	margin-bottom: 50px;
 }
 
 /* Члени команди */
