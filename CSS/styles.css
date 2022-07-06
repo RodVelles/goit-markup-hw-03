@@ -39,7 +39,20 @@ ul {
 	list-style: none;
 }
 
+.list {
+	margin: 0;
+	padding: 0;
+}
+
 /* Оформлення шапки */
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	outline: 4px solid red;
+}
+
+
 .logo {
 	color: #000000;
 	font-family: Raleway, sans-seri;
@@ -92,10 +105,32 @@ ul {
 
 /* Герой */
 .hero {
+	padding: 0;
+	margin: 0;
 	background-color: #2f303a;
 }
 
+
+.hero .hero-title {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+	color: #ffffff;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+}
+
 .button {
+	border-radius: 4px;
+    padding: 10px 32px;
+	min-width: 200px;
+	border: 1px solid transparent;
+
 	font-family: Roboto;
 	color: #ffffff;
 	background-color: #2196f3;
@@ -106,24 +141,35 @@ ul {
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
+
+	margin-right: auto;
+	margin-left: auto;
+
 }
 
-.hero .hero-title {
-	color: #ffffff;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	text-align: center;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
-}
 
 /* Переваги помлуг */
+.section .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .section .section-title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .section .section-subtitle {
