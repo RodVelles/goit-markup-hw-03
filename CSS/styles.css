@@ -19,6 +19,15 @@
     Колір кнопки фільтра #F5F4FA;
 
 */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 
 :root {
 	--primary-text-color: #757575;
@@ -45,6 +54,11 @@ ul {
 }
 
 /* Оформлення шапки */
+.header {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
@@ -54,9 +68,13 @@ ul {
 	outline: 4px solid red;
 }
 /* Позиціювання шапки */
+.nav {
+    display: flex;
+}
 
 
 .logo {
+
 	color: #000000;
 	font-family: Raleway, sans-seri;
 	font-weight: 700;
@@ -73,11 +91,15 @@ ul {
 }
 .main-nav {
 	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 /* Сайт зараз */
 
 .site-nav {
 	display: flex;
+	align-items: center;
+	margin-left: 93px;
 }
 .site-nav .item:not(:last-child) {
 	margin-right: 50px;
@@ -105,6 +127,7 @@ ul {
 
 /* ПОшта з телефоном */
 .more {
+	margin-left: auto;
 	display: flex;
 }
 
@@ -253,10 +276,22 @@ ul {
 	background-color: #2f303a;
 }
 
-.logo.slogan {
+.footer-nav{
+	display: flex;
+	padding-top: 60px;
 	padding-bottom: 60px;
+}
 
+.logo.slogan {
 	color: #ffffff;
+}
+
+.address {
+	margin-top: 20px;
+}
+
+.link-addres {
+	margin-bottom: 9px;
 }
 
 .address .address-map {
