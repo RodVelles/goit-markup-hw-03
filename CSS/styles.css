@@ -233,9 +233,6 @@ ul {
 .item-box {
 	width: 270px;
 }
-.section-list{
-
-}
 
 .section .section-title {
 	margin-top: 0;
@@ -343,9 +340,38 @@ ul {
 }
 
 /* Портфоліо */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-box {
+	margin-top: 94px;
+	margin-bottom: 94px;
+}
 
 /* Фільтир */
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
 .buttons .btn {
+	border-radius: 4px;
+	padding: 6px 22px;
+	border: none;
+
 	font-family: Roboto;
 	color: var(--title-color);
 	background-color: var(--primary-btn-bgc);
@@ -354,6 +380,10 @@ ul {
 	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.03em;
+}
+
+.buttons .btn:not(:last-child) {
+	margin-right: 8px;
 }
 
 .buttons .btn:hover,
