@@ -58,8 +58,9 @@ ul {
 
 /* Оформлення шапки */
 .header {
-	margin-top: 25px;
-	margin-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ECECEC;
 }
 
 .container {
@@ -266,9 +267,13 @@ ul {
 	padding-top: 0;
 }
 
+.text-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 /* Члени команди */
 .section .section-name {
-	margin-top: 30px;
 	margin-bottom: 10px;
 
 	font-weight: 500;
@@ -280,7 +285,7 @@ ul {
 .section .profession {
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-bottom: 30px;
+
 
 	color: #757575;
 	font-weight: 400;
@@ -292,12 +297,12 @@ ul {
 /* Футер */
 .footer {
 	background-color: #2f303a;
+	padding-top: 60px;
+	padding-bottom: 60px; 
 }
 
 .footer-nav {
 	display: flex;
-	padding-top: 60px;
-	padding-bottom: 60px;
 }
 
 .logo.slogan {
@@ -347,11 +352,6 @@ ul {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
-
-.section-box {
-	margin-top: 94px;
-	margin-bottom: 94px;
 }
 
 /* Фільтир */
