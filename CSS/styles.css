@@ -22,14 +22,15 @@
 
 /* Утиліти */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
 }
-
 
 :root {
 	--primary-text-color: #757575;
@@ -67,16 +68,13 @@ ul {
 	width: 1200px;
 	padding-right: 15px;
 	padding-left: 15px;
-	outline: 4px solid red;
 }
 /* Позиціювання шапки */
 .nav {
-    display: flex;
+	display: flex;
 }
 
-
 .logo {
-
 	color: #000000;
 	font-family: Raleway, sans-seri;
 	font-weight: 700;
@@ -106,7 +104,6 @@ ul {
 .site-nav .item:not(:last-child) {
 	margin-right: 50px;
 }
-
 
 .site-nav .link {
 	display: block;
@@ -269,10 +266,9 @@ ul {
 	padding-top: 0;
 }
 
-
 /* Члени команди */
 .section .section-name {
-    margin-top: 30px;
+	margin-top: 30px;
 	margin-bottom: 10px;
 
 	font-weight: 500;
@@ -298,7 +294,7 @@ ul {
 	background-color: #2f303a;
 }
 
-.footer-nav{
+.footer-nav {
 	display: flex;
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -341,16 +337,16 @@ ul {
 
 /* Портфоліо */
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .section-box {
@@ -367,7 +363,7 @@ ul {
 	margin-bottom: 50px;
 }
 
-.buttons .btn-item:not(:last-child){
+.buttons .btn-item:not(:last-child) {
 	margin-right: 8px;
 }
 
@@ -378,7 +374,7 @@ ul {
 
 	font-family: Roboto;
 	color: var(--title-color);
-    background-color: var(--primary-btn-bgc);
+	background-color: var(--primary-btn-bgc);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
@@ -393,11 +389,35 @@ ul {
 }
 
 /* Список проектів */
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.items .item-features:not(:nth-child(n + 7)) {
+	margin-bottom: 30px;
+}
+
+.items .item-features:not(:nth-child(3n)) {
+	margin-right: 30px;
+}
+
 .link-content {
 	text-decoration: none;
 }
 
+.feactures-content {
+	padding: 20px 24px;
+	border: 1px solid #eeeeee;
+	border-top: none;
+	background-color: #ffffff;
+}
+
 .items .subject {
+	margin-bottom: 4px;
+	text-align: start;
+	
 	color: var(--title-color);
 	font-weight: 700;
 	font-size: 18px;
