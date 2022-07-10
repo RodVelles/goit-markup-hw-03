@@ -367,6 +367,10 @@ ul {
 	margin-bottom: 50px;
 }
 
+.buttons .btn-item:not(:last-child){
+	margin-right: 8px;
+}
+
 .buttons .btn {
 	border-radius: 4px;
 	padding: 6px 22px;
@@ -374,16 +378,12 @@ ul {
 
 	font-family: Roboto;
 	color: var(--title-color);
-	background-color: var(--primary-btn-bgc);
+    background-color: var(--primary-btn-bgc);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.03em;
-}
-
-.buttons .btn:not(:last-child) {
-	margin-right: 8px;
 }
 
 .buttons .btn:hover,
